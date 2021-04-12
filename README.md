@@ -15,7 +15,7 @@
 Clone o projeto e acesse a pasta
 
 ```bash
-$ git clone https://github.com/mathlima1/dtmoney.git && cd NLW4
+$ git clone https://github.com/mathlima1/dtmoney.git && cd dtmoney
 ```
 
 Siga os passos abaixo
