@@ -12,6 +12,13 @@ export const Content = styled.div`
     justify-content: space-between;
     align-items: center;
 
+    @media screen and (max-width:425px){
+        flex-wrap: wrap;
+        justify-content:center;
+        button{
+            margin: 1rem auto;
+        }
+    }
     button{
         font-size: 1rem;
         color: #FFF;

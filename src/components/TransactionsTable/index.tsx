@@ -1,7 +1,6 @@
-import { useContext } from "react";
 import { useTransaction } from "../../hooks/useTransaction";
 
-import { Container } from "./styles";
+import { Container, divMobile } from "./styles";
 
 export function TransactionsTable() {
     const { transactions } = useTransaction()
@@ -9,6 +8,10 @@ export function TransactionsTable() {
 
     return (
         <Container>
+            <div>
+                <h3>Listagem</h3>
+                <span>{transactions.length} itens</span>
+            </div>
             <table>
                 <thead>
                     <tr>

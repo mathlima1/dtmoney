@@ -2,7 +2,13 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     margin-top: 4rem;
-
+    &>div{  
+        display: none;
+        @media screen and (max-width: 625px){
+            display: flex;
+            justify-content:space-between;
+        }
+    }
     table{
        width: 100%;
        border-spacing:  0 0.5rem;
@@ -36,4 +42,27 @@ export const Container = styled.div`
            }
        }
     }
+
+    @media screen and (max-width: 625px){
+        th{
+            display: none;
+        }
+        tr{
+            display:flex;
+            flex-wrap: wrap;
+            border-radius: 8rem 
+        }
+        td:nth-child(1){
+            width: 100%;
+        }
+        td:nth-child(2){
+            width: 100%;
+        }
+        td:nth-child(3), td:nth-child(4){
+            width: 50%;
+        }
+    }
 `;
+export const divMobile = styled.div`
+    
+`
