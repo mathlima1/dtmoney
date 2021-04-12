@@ -7,7 +7,6 @@ interface HeaderProps {
 
 export function Header({ onOpenNewTransactionModal }: HeaderProps) {
 
-
     return (
         <Container>
             <Content>
